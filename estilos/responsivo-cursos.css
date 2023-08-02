@@ -1,11 +1,15 @@
 @media(max-width:1250px){
+    
     .cabecalho-curso{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 45px;
         margin-top: 100px;
+    }
+
+    .titulo-curso{
+        font-size: 35pt;
     }
 
     .cabecalho-curso .logotipo{
@@ -17,7 +21,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 18pt;
+        font-size: 15pt;
         margin-bottom: 25px;
     }
 
@@ -33,5 +37,4 @@
     iframe{
         padding: 35px;
     }
-
 }
