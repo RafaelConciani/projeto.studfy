@@ -1,0 +1,25 @@
+@media(max-width:800px){
+
+    .logotipo{
+        width: 500px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 8px;
+    }
+
+    header{
+        font-family: 'Victor Mono', monospace;    
+        font-size: 12pt;
+        color: #ffff;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+
+    .input-field input{
+        width: 500px;
+    }
+}

@@ -1,0 +1,126 @@
+body::before{
+    content: '';
+    background-image: url(../Imagens/background.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cabecalho-home{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column-reverse;
+    font-family: 'Victor Mono', monospace;
+    font-size: 16pt;
+    color: #ffff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.titulo{
+    margin-top: 70px;
+    font-family: 'Victor Mono', monospace;
+    font-size: 60pt;
+    color: #ffff;
+}
+
+main .cursos{
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 160vh;
+    justify-content: center;
+    align-items:center;
+    gap: 200px;
+}
+
+.selecao-de-cursos{
+    max-width: 2000px;
+    backdrop-filter: blur(100px);
+    background-color: rgba(10, 92, 2, 0.185);
+    border-radius: 50px;
+}
+
+.curso{
+    width: 350px;
+}
+
+.link-curso:hover{
+    color:rgb(3, 43, 0);
+}
+
+.conhecimentos-gerais{
+    max-width: 1555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Victor Mono', monospace;
+    color: rgb(8, 207, 1);
+    backdrop-filter: blur(100px);
+    background-color: rgba(10, 92, 2, 0.185);
+    border-radius: 50px;
+}
+
+.conhecimentos-gerais h1{
+    max-width: 100%;
+    margin-top: 200px;
+    font-size: 40pt;
+}
+
+.lista-conhecimentos .link-curso{
+    font-style: inherit;
+    font-size: 35pt;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+body .lista-conhecimentos{
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.lista-conhecimentos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: outside;
+    list-style-image: url(../Imagens/icone.png);   
+}
+
+.lista-conhecimentos p{
+    font-size: 15pt;
+}
+
+.link-curso:hover{
+    color: rgb(3, 100, 0);
+}
+
+.link-playlist{
+    font-size: 20pt;
+}
+
+.link-playlist:hover{
+    color: rgb(3, 100, 0);
+}
+
+div{
+    content: '';
+    height: 300px;
+}
+
+iframe{
+    padding-bottom: 50px;
+    border-radius: 10px;
+}

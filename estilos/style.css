@@ -1,0 +1,124 @@
+body::before{
+    content: '';
+    background-image: url(../Imagens/background.jpg);
+    position: fixed;
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logotipo{
+    width: 600px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+header{
+    font-family: 'Victor Mono', monospace;    
+    font-size: 16pt;
+    color: #ffff;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background: none;    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 60px;
+    min-height: 10vh;
+    max-width: 400px;
+}
+
+.input-field{
+    position: relative;
+}
+
+.input-field input{
+    background: none;
+    outline: none;
+    font-family: 'Victor Mono', monospace;
+    color: #FFFF;
+    font-size: 14pt;
+    width: 500px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+.input-field .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 500px;
+    bottom: -5px;
+    left: 0;
+    background: #dadada;
+}   
+
+.input-field .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 500px;
+    bottom: -5px;
+    left: 0;
+    background:rgb(3, 43, 0);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+form input[type="submit"] {
+    font-family: 'Victor Mono', monospace;
+    font-size: 16pt;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 400px;
+    height: 55px;
+    cursor: pointer;
+    transition: 150ms ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color:rgb(3, 43, 0);
+    color: #ffff;
+}
+
+.sem-cadastro{
+    margin-top: 70px;
+    font-family:'Victor Mono', monospace;
+    font-size: 17pt;
+    color: #ffff;
+    transition: 150ms ease-in-out;
+}
+
+.sem-cadastro:hover{
+    color:rgb(3, 43, 0);
+}
